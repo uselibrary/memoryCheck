@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 # check if is utf-8, if not, set it
-if [ `locale charmap` != 'UTF-8' ]; then
-    export LC_ALL=en_US.UTF-8
-fi
+# if [ `locale charmap` != 'UTF-8' ]; then
+#     export LC_ALL=en_US.UTF-8
+# fi
 
 echo "内存超售检测开始......"
 echo ""
