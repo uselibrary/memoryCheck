@@ -8,6 +8,11 @@
 
 ## 一键脚本
 ```
+curl https://raw.githubusercontent.com/uselibrary/memoryCheck/main/memoryCheck.sh | bash
+```
+
+如果上述执行出错，可以尝试以下命令：
+```
 wget --no-check-certificate -O memoryCheck.sh https://raw.githubusercontent.com/uselibrary/memoryCheck/main/memoryCheck.sh && chmod +x memoryCheck.sh && bash memoryCheck.sh
 ```
 
