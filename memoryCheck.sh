@@ -16,7 +16,7 @@ echo "内存io速度: $speed GB/s"
 echo ""
 if [ $speed -lt 10 ]; then
     echo -e "\033[31mSWAP超售!\033[0m"
-    echo "超售! 内存io速度低于 10 GB/s，存在SWAP超售可能"
+    echo "内存io速度低于 10 GB/s，存在SWAP超售可能"
 else
     echo "未使用SWAP超售，内存io速度正常"
 fi
