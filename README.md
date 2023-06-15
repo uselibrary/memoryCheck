@@ -8,7 +8,7 @@
 
 ## 一键脚本
 ```
-wget
+wget --no-check-certificate -O memoryCheck.sh https://raw.githubusercontent.com/uselibrary/memoryCheck/main/memoryCheck.sh && chmod +x memoryCheck.sh && bash memoryCheck.sh
 ```
 
 ## 详细介绍
