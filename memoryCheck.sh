@@ -10,7 +10,7 @@ echo ""
 
 # Check SWAP oversold
 memSize=`free -m | awk '/Mem/ {print $2}'`
-speed=`dd if=/dev/zero of=/dev/null bs=1M count=$memSize 2>&1 | awk '/copied/ {print $(NF-1)}'`
+speed=`dd if=/dev/zero of=/dev/null bs=1M count=$memSize 2>&1 | awk '{print $(NF-1)}' | awk 'END {print}' | awk -F '，' '{print $NF}'`
 speed=`echo $speed | awk '{printf("%.0f\n",$1)}'`
 echo "内存io速度: $speed GB/s"
 echo ""
