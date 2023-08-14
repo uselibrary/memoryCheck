@@ -47,7 +47,7 @@ KSM是一种内存合并技术，它可以在KVM中实现内存共享，从而�
 
 ## 一键脚本
 ```
-curl https://raw.githubusercontent.com/uselibrary/memoryCheck/main/performanceTest.sh | bash
+curl -s https://raw.githubusercontent.com/uselibrary/memoryCheck/main/performanceTest.sh | bash
 ```
 
 ## 输入结果
