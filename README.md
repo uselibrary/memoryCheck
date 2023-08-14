@@ -34,3 +34,16 @@ KSM是一种内存合并技术，它可以在KVM中实现内存共享，从而�
 1. 基于nodeseek讨论内容，感谢原作者，详情：https://www.nodeseek.com/post-8417-1
 2. 脚本已经在KVM架构的Debian 11/12系统上通过检测
 3. 其他架构和系统理论上有用，具体检测没做
+
+
+# performanceTest
+
+用于检测VPS的CPU和内存速度的，实现方法如下：
+
+- 计算i++到2000000000时i*i的耗时
+- 计算i++到100000000时内存顺序赋值的耗时
+
+## 一键脚本
+```
+curl https://raw.githubusercontent.com/uselibrary/memoryCheck/main/memoryCheck.sh | bash
+```
