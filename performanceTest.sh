@@ -16,6 +16,6 @@ echo ""
 
 # download file
 cd ~
-wget --no-check-certificate -O performanceTest.sh https://raw.githubusercontent.com/uselibrary/memoryCheck/main/performanceTest
+wget --no-check-certificate -O performanceTest https://raw.githubusercontent.com/uselibrary/memoryCheck/main/performanceTest
 chmod +x performanceTest
 ./performanceTest
